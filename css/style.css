@@ -6,9 +6,11 @@
 }
 
 body {
-  background: #0f172a;
-  color: #fff;
+  /* Fundo em degradê rosinha suave */
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  color: #881337;
   padding: 30px;
+  min-height: 100vh;
 }
 
 header {
@@ -18,11 +20,12 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #22c55e;
+  /* Rosa vibrante para o título */
+  color: #db2777;
 }
 
 header p {
-  color: #cbd5f5;
+  color: #9d174d;
 }
 
 /* GRID */
@@ -34,31 +37,35 @@ header p {
 
 /* CARD */
 .card {
-  background: #1e293b;
+  background: #ffffff;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
   transition: 0.3s;
-  border: 1px solid transparent;
+  border: 1px solid #fbcfe8;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  border: 1px solid #22c55e;
+  /* Borda rosa no hover */
+  border: 1px solid #f472b6;
 }
 
 /* TEXTO */
 .card h3 {
   margin-bottom: 15px;
   font-size: 1.1rem;
+  color: #be185d;
 }
 
 /* BOTÃO */
 .card a {
   display: inline-block;
   padding: 10px 15px;
-  background: #22c55e;
-  color: #000;
+  /* Botão com degradê rosinha */
+  background: linear-gradient(to right, #fb7185, #f472b6);
+  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
@@ -66,7 +73,8 @@ header p {
 }
 
 .card a:hover {
-  background: #16a34a;
+  background: linear-gradient(to right, #f43f5e, #db2777);
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.3);
 }
 
 .card:hover {
